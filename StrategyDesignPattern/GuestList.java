@@ -18,7 +18,7 @@ public class GuestList {
         return true;
     }
     public boolean remove(String person) {
-        if () {
+        if (!) {
             return false;
         }
         people.remove(person);

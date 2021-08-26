@@ -1,3 +1,5 @@
 // INterface that sets out Linear and Binary Search's function
-
-public interface SearchBehavior
+package strategy;
+public interface SearchBehavior {
+    public boolean contains(ArrayList<String> data, String item);
+}
