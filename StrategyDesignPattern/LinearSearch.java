@@ -1,10 +1,19 @@
-// This is only using everything in the interface as a Linear Search (nothing more, nothing less)
+
 package strategy;
 public class LinearSearch implements SearchBehavior {
-    public LinarSearch {
+    public LinearSearch() {
         // empty
     }
     public boolean contains(ArrayList<String> data, String item) {
-
+        // linear is when it goes 0-last, checking every one
+        int lastindex = data.length()-1;
+        int iterator = 0;
+        while (iterator < lastindex) {
+            if (data[iterator].equals(item)) {
+                return true;
+            }
+            iterator++;
+        }
+        return false;
     }
 }

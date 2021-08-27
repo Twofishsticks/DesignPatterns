@@ -3,22 +3,22 @@ package strategy;
 public class GuestList {
     private String title;
     private ArrayList<String> people;
-    private searchBehavior SearchBehavior;
+    private SearchBehavior searchBehavior;
 
     public GuestList(String title) {
         this.title = title;
-        ArrayList<String> people = new ArrayList<String>;
-        searchBehavior = new LinearSearch;
+        ArrayList<String> people = new ArrayList<String>();
+        searchBehavior = new LinearSearch();
     }
     public boolean add(String person) {
-        if () {
+        if (searchBehavior.contains(people, person)) {
             return false;
         }
         people.add(person);
         return true;
     }
     public boolean remove(String person) {
-        if (!) {
+        if (!searchBehavior.contains(people, person)) {
             return false;
         }
         people.remove(person);
