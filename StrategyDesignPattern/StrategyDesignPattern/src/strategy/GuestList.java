@@ -2,6 +2,8 @@
 package strategy;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class GuestList {
     private String title;
@@ -14,14 +16,16 @@ public class GuestList {
         searchBehavior = new LinearSearch();
     }
     public boolean add(String person) {
-        if (searchBehavior.contains(people, person)) {
+        String persony = person.toLowerCase();
+        if (searchBehavior.contains(people, persony)) {
             return false;
         }
         people.add(person);
         return true;
     }
     public boolean remove(String person) {
-        if (!searchBehavior.contains(people, person)) {
+        String persony = person.toLowerCase();
+        if (!searchBehavior.contains(people, persony)) {
             return false;
         }
         people.remove(person);
@@ -34,6 +38,7 @@ public class GuestList {
         this.searchBehavior = searchBehavior;
     }
     public ArrayList<String> getList() {
+        Collections.sort(people);
         return this.people;
     }
 }
