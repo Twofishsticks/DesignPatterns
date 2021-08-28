@@ -1,5 +1,5 @@
-package strategy;
 
+package strategy;
 import java.util.ArrayList;
 
 /**
@@ -7,7 +7,7 @@ import java.util.ArrayList;
  */
 public class ListDriver {
     private GuestList gList;
-
+    
     /**
      * Creates the new Guest List
      */

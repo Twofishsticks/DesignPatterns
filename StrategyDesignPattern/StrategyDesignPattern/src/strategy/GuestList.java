@@ -1,5 +1,8 @@
 // This is the place where everything comes together in the arraylist
 package strategy;
+
+import java.util.ArrayList;
+
 public class GuestList {
     private String title;
     private ArrayList<String> people;
@@ -7,7 +10,7 @@ public class GuestList {
 
     public GuestList(String title) {
         this.title = title;
-        ArrayList<String> people = new ArrayList<String>();
+        people = new ArrayList<String>();
         searchBehavior = new LinearSearch();
     }
     public boolean add(String person) {
