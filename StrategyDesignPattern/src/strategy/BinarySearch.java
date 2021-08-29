@@ -7,6 +7,13 @@ public class BinarySearch implements SearchBehavior {
     public BinarySearch() {
         // empty
     }
+    /**
+     * Searches for an item within ArrayList data
+     * 
+     * @param data for the ArrayList
+     * 
+     * @param item for searched item
+     */
     public boolean contains(ArrayList<String> data, String item) { 
         int left = 0;
         int right = data.size() - 1; 

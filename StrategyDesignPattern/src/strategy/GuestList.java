@@ -16,6 +16,11 @@ public class GuestList {
         people = new ArrayList<String>();
         searchBehavior = new LinearSearch();
     }
+    /**
+     * Attempts to add the guest to the guest list
+     * 
+     * @param guest The name to add to the list
+     */
     public boolean add(String person) {
         String persony = person.toLowerCase();
         if (searchBehavior.contains(people, persony)) {
@@ -24,6 +29,11 @@ public class GuestList {
         people.add(person);
         return true;
     }
+    /**
+     * Attempts to remove the guest from the list
+     * 
+     * @param guest the name to remove from the list
+     */
     public boolean remove(String person) {
         String persony = person.toLowerCase();
         if (!searchBehavior.contains(people, persony)) {
