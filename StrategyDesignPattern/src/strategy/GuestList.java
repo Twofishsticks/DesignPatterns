@@ -1,9 +1,11 @@
-// This is the place where everything comes together in the arraylist
 package strategy;
 
 import java.util.ArrayList;
 import java.util.Collections;
-
+/**
+ * Sets up all necessary values to be searched with,
+ * alongside which search to use
+ */
 public class GuestList {
     private String title;
     private ArrayList<String> people;
