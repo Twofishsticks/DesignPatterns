@@ -14,12 +14,17 @@ public class Customer extends BestSellers{
         this.subject = subject;
         this.firstName = firstName;
         this.lastName = lastName;
+        wishList = new ArrayList<Book>();
     }
 
     public void update(Book book) {
         // ALL best sellers go in here, no deletions
+        wishList.add(book);
     }
     public void display() {
         // show full arraylist
+        for( Book currentBook: wishList) {
+            System.out.println(currentBook);
+        }
     }
 }

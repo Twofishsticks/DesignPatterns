@@ -25,7 +25,7 @@ public class BookDriver {
         bestSellers.addBook(new Book("Girl A", "Abigail", "Dean"));
         bestSellers.addBook(new Book("The Kindest Lie", "Nancy", "Johnson"));
         bestSellers.addBook(new Book("My Year Abroad", "Chang", "Rae-Lee"));
-
+        
         myStore.display();
         myCustomer.display();
     }
