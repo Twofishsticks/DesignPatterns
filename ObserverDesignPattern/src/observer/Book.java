@@ -19,7 +19,7 @@ public class Book {
         return this.authorLastName;
     }
     public String toString(){
-        //placeholder bc idk the format
-        return "placeholder";
+        // title by: first last
+        return this.title + " by: " + this.authorFirstName + " " + this.authorLastName;
     }
 }

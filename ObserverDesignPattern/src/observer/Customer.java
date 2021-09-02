@@ -16,11 +16,17 @@ public class Customer extends BestSellers{
         this.lastName = lastName;
         wishList = new ArrayList<Book>();
     }
-
+    /**
+     * Updates the wishlist to include EVERY book that's in the bestsellers'
+     * @param book
+     */
     public void update(Book book) {
         // ALL best sellers go in here, no deletions
         wishList.add(book);
     }
+    /**
+     * Displays all books in the wishlist
+     */
     public void display() {
         // show full arraylist
         for( Book currentBook: wishList) {

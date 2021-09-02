@@ -26,15 +26,24 @@ public class Store extends BestSellers implements Observer{
         this.title = title;
         bestSellers = new PriorityQueue<>();
     }
+    /**
+     * Updates bestseller queue.
+     * If # of books is 5, deletes the oldest one
+     * Adds book to list
+     * @param book
+     */
     public void update(Book book){
         // move until 5 books, then make room by deleting oldest book
-        if (bestSellers.size()<=4) {
+        if (bestSellers.size()<4) {
             bestSellers.add(book);
         } else {
             bestSellers.remove();
             bestSellers.add(book);
         }
     }
+    /**
+     * Shows the current top 5 bestsellers
+     */
     public void display() {
         // show the top 5
         for(Book top5 : bestSellers) {
