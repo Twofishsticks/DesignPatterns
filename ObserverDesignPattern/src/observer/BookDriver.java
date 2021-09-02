@@ -26,8 +26,10 @@ public class BookDriver {
         bestSellers.addBook(new Book("The Kindest Lie", "Nancy", "Johnson"));
         bestSellers.addBook(new Book("My Year Abroad", "Chang", "Rae-Lee"));
         
-        myStore.display();
-        myCustomer.display();
+        //myStore.display();
+        //myCustomer.display();
+        // delete later
+        
     }
 
     public static void main(String[] args){

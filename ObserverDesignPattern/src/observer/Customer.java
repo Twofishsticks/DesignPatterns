@@ -3,7 +3,7 @@ package observer;
 import java.util.ArrayList;
 
 
-public class Customer extends BestSellers{
+public class Customer implements Observer{
     // BestSellers already implements Subject
     private Subject subject;
     private String firstName;
@@ -15,6 +15,7 @@ public class Customer extends BestSellers{
         this.firstName = firstName;
         this.lastName = lastName;
         wishList = new ArrayList<Book>();
+        subject.registerObserver(this);
     }
     /**
      * Updates the wishlist to include EVERY book that's in the bestsellers'

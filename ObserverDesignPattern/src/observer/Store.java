@@ -3,7 +3,7 @@ package observer;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-public class Store extends BestSellers implements Observer{
+public class Store implements Observer{
     private Subject subject;
     private String title;
     private Queue<Book> bestSellers; // top 5
@@ -15,6 +15,9 @@ public class Store extends BestSellers implements Observer{
     public Store( Subject subject) {
         this.subject = subject;
         bestSellers = new PriorityQueue<>();
+        // important
+        subject.registerObserver(this);
+        // register w the big boy
     }
     /**
      * Normal Constructor
