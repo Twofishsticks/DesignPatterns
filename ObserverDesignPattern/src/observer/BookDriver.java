@@ -14,7 +14,7 @@ public class BookDriver {
         BestSellers bestSellers = new BestSellers();
         Observer myStore = new Store(bestSellers);
         Observer myCustomer = new Customer(bestSellers, "Amy", "Smith");
-
+        // NOTE: DELETE
         bestSellers.addBook(new Book("The Bust", "Ashely", "Audrain"));
         bestSellers.addBook(new Book("A Crooked Tree", "Una", "Mannion"));
         bestSellers.addBook(new Book("Let Me Tell You What I Mean", "Joan", "Didion"));
@@ -26,9 +26,9 @@ public class BookDriver {
         bestSellers.addBook(new Book("The Kindest Lie", "Nancy", "Johnson"));
         bestSellers.addBook(new Book("My Year Abroad", "Chang", "Rae-Lee"));
         
-        //myStore.display();
-        //myCustomer.display();
-        // delete later
+        myStore.display();
+        myCustomer.display();
+        // delete //s later
         
     }
 

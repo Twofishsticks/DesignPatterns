@@ -22,16 +22,16 @@ public class Customer implements Observer{
      * @param book
      */
     public void update(Book book) {
-        // ALL best sellers go in here, no deletions
         wishList.add(book);
     }
     /**
      * Displays all books in the wishlist
      */
     public void display() {
+        System.out.println("Wish List:");
         // show full arraylist
         for( Book currentBook: wishList) {
-            System.out.println(currentBook);
+            System.out.println(currentBook.toString());
         }
     }
 }

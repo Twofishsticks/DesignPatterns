@@ -43,7 +43,6 @@ public class BestSellers implements Subject{
         bestSellers.add(book);
         this.notifyObservers(book);
     }
-    public void update(Book book) {
-        // idk what to do in here :(
-    }
+    
+    
 }
