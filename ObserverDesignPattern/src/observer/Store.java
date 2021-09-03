@@ -36,7 +36,7 @@ public class Store implements Observer{
      */
     public void update(Book book){
         // move until 5 books, then make room by deleting oldest book
-        if ((bestSellers.size())<=5) {
+        if ((bestSellers.size())<5) {
             bestSellers.add(book);
         } else {
             bestSellers.remove(0);
@@ -51,5 +51,6 @@ public class Store implements Observer{
         for(Book top5 : bestSellers) {
             System.out.println(top5.toString());
         }
+        System.out.println("");
     }
 }

@@ -33,5 +33,6 @@ public class Customer implements Observer{
         for( Book currentBook: wishList) {
             System.out.println(currentBook.toString());
         }
+        System.out.println("");
     }
 }
