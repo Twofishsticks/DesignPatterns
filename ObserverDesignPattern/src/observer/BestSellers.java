@@ -10,7 +10,7 @@ public class BestSellers implements Subject{
         this.bestSellers = new ArrayList<>();
     }
     /**
-     * add lil dude
+     * Registers an Observer
      * @param observer
      */
     @Override
@@ -18,7 +18,7 @@ public class BestSellers implements Subject{
         observers.add(observer);
     }
     /**
-     * rem lil dude
+     * Removes an Observer
      * @param observer
      */
     @Override
@@ -26,7 +26,7 @@ public class BestSellers implements Subject{
         observers.remove(observer);
     }
     /**
-     * notify
+     * Notifies all Observers
      * @param book
      */
     @Override
@@ -36,7 +36,7 @@ public class BestSellers implements Subject{
         }
     }
     /**
-     * take in, notify
+     * Takes in a book, then notifies all Observers
      * @param book
      */
     public void addBook(Book book) {
@@ -44,5 +44,5 @@ public class BestSellers implements Subject{
         this.notifyObservers(book);
     }
     
-    
+
 }

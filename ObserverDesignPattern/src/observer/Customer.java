@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 
 public class Customer implements Observer{
-    // BestSellers already implements Subject
     private Subject subject;
     private String firstName;
     private String lastName; 

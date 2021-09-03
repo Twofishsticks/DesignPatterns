@@ -14,9 +14,7 @@ public class Store implements Observer{
     public Store(Subject subject) {
         this.subject = subject;
         bestSellers = new ArrayList<>();
-        // important
         subject.registerObserver(this);
-        // register w the big boy
     }
     /**
      * Normal Constructor
@@ -35,7 +33,6 @@ public class Store implements Observer{
      * @param book
      */
     public void update(Book book){
-        // move until 5 books, then make room by deleting oldest book
         if ((bestSellers.size())<5) {
             bestSellers.add(book);
         } else {
