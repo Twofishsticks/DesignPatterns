@@ -4,7 +4,7 @@ public class Eyes extends CharacterDecorator{
     public Eyes(Character character) {
         ArrayList<String> copier = new ArrayList<>();
         int i = 0;
-        for(String line : sections) {
+        for(String line : character.sections) {
             if( i == 3) {
                 copier.add(" |  o  o  | ");
             } else {
@@ -12,7 +12,7 @@ public class Eyes extends CharacterDecorator{
             }
             i++;
         }
-        sections = copier;
+        this.sections = copier;
     }
     @Override
     void customise() {

@@ -5,14 +5,14 @@ public class Hat extends CharacterDecorator{
     public Hat(Character character){
         ArrayList<String> copier = new ArrayList<>();
         int i = 0;
-        for(String line : sections) {
+        for(String line : character.sections) {
             if( i == 1) {
                 copier.add("__|____|____");
             }
                 copier.add(line);
             i++;
         }
-        sections = copier;
+        this.sections = copier;
     }
     @Override
     void customise() {

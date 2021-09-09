@@ -4,7 +4,7 @@ public class Nose extends CharacterDecorator{
     public Nose(Character character){
         ArrayList<String> copier = new ArrayList<>();
         int i = 0;
-        for(String line : sections) {
+        for(String line : character.sections) {
             if( i == 4) {
                 copier.add("  |   >    |  ");
             } else {
@@ -12,7 +12,7 @@ public class Nose extends CharacterDecorator{
             }
             i++;
         }
-        sections = copier;
+        this.sections = copier;
     }
     @Override
     void customise() {
