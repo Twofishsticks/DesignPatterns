@@ -1,4 +1,4 @@
-public abstract class CharacterDecorator {
+public abstract class CharacterDecorator extends Character {
     protected Character character;
     public CharacterDecorator(Character character) {
         this.character = character;
