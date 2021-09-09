@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class Eyes extends CharacterDecorator{
     public Eyes(Character character) {
+        super(character);
         ArrayList<String> copier = new ArrayList<>();
         int i = 0;
         for(String line : character.sections) {
