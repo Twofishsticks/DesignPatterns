@@ -13,6 +13,7 @@ public class Mouth extends CharacterDecorator{
             }
             i++;
         }
+        copier.add("   \\____/ ");
         this.sections = copier;
     }
 

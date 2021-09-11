@@ -7,7 +7,7 @@ public class Nose extends CharacterDecorator{
         int i = 0;
         for(String line : character.sections) {
             if( i == 4) {
-                copier.add("  |   >    |  ");
+                copier.add(" |   >    |");
             } else {
                 copier.add(line);
             }
