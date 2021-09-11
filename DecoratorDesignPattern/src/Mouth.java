@@ -1,6 +1,10 @@
 import java.util.ArrayList;
 
 public class Mouth extends CharacterDecorator{
+    /**
+     * Creates the mouth of the character
+     * @param character
+     */
     public Mouth(Character character) {
         super(character);
         ArrayList<String> copier = new ArrayList<>();
@@ -16,7 +20,9 @@ public class Mouth extends CharacterDecorator{
         copier.add("   \\____/ ");
         this.sections = copier;
     }
-
+    /**
+     *  Empty Method
+     */
     @Override
     void customise() {
         // TODO Auto-generated method stub

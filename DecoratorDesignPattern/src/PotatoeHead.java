@@ -1,4 +1,7 @@
 public class PotatoeHead extends Character{
+    /**
+     * Creates a base for all aterations (hat, nose, etc.)
+     */
     public PotatoeHead() {
         super();
         // create the base first, this is the default (blank face)
@@ -12,4 +15,3 @@ public class PotatoeHead extends Character{
         // hat gets added to the front, then maybe changes index 1(?)
     }
 }
-// arraylist is length 7. hat is 0/1, eyes is 3, nose is4, mouth is 5
