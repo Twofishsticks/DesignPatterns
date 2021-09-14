@@ -40,6 +40,9 @@ public abstract class HousePlan {
     public int getSquareFeet() {
         return this.squareFeet;
     }
+    /**
+     * Empty due to no use in the driver
+     */
     public String toString() {
         return null;
     }
