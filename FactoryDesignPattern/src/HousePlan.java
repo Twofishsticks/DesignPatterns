@@ -17,9 +17,17 @@ public abstract class HousePlan {
     }
     abstract void setMaterials();
     abstract void setFeatures();
+    /**
+     * Returns the arraylist features
+     * @return features
+     */
     public ArrayList<String> getFeatures() {
         return this.features;
     }
+    /**
+     * Returns the arraylist materials
+     * @return materials
+     */
     public ArrayList<String> getMaterials() {
         return this.materials;
     }
