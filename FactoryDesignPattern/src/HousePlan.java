@@ -7,24 +7,26 @@ public abstract class HousePlan {
     private int numWindows;
     private int squareFeet;
     public HousePlan(int numRooms, int numWindows, int squareFeet) {
-
+        this.numRooms = numRooms;
+        this.numWindows = numWindows;
+        this.squareFeet = squareFeet;
     }
     abstract void setMaterials();
     abstract void setFeatures();
     public ArrayList<String> getFeatures() {
-        return null;
+        return this.features;
     }
     public ArrayList<String> getMaterials() {
-        return null;
+        return this.materials;
     }
     public int getNumRooms() {
-        return 0;
+        return this.numRooms;
     }
     public int getNumWindows() {
-        return 0;
+        return this.numWindows;
     }
     public int getSquareFeet() {
-        return 0;
+        return this.squareFeet;
     }
     public String toString() {
         return null;

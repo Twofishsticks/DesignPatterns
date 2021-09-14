@@ -1,6 +1,6 @@
-public class TinyHomePlan {
+public class TinyHomePlan extends HousePlan{
     public TinyHomePlan() {
-        
+        super(1, 5, 200);
     }
     protected void setMaterials() {
 
