@@ -1,4 +1,5 @@
 import java.util.Iterator;
+// Supposed to go through each item in Airplane's flights, toString that item
 
 public class AirlineDriver {
    
