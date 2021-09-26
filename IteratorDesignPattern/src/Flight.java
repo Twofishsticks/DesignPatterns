@@ -4,6 +4,14 @@ public class Flight {
     private String to; 
     private int duration; // in mins
     private int transfers;
+    /**
+     * Constructs a Flight
+     * @param flightNum
+     * @param from
+     * @param to
+     * @param duration
+     * @param transfers
+     */
     public Flight(String flightNum, String from, String to, int duration, int transfers) {
         this.flightNum = flightNum;
         this.from = from;
@@ -11,6 +19,9 @@ public class Flight {
         this.duration = duration;
         this.transfers = transfers;
     }
+    /**
+     * Returns all items of Flight into a string
+     */
     public String toString() {
         String everyString = "";
         everyString+= "\n Flight Number: "+ this.getFlightNum();
@@ -25,20 +36,34 @@ public class Flight {
         everyString+= "\n " + this.getTransfers() + " Transfers \n";
         }
         return everyString;
-        // put something in here obviously
     }
+    /**
+     * @return from
+     */
     public String getFrom(){
         return this.from;
     }
+    /**
+     * @return to
+     */
     public String getTo() {
         return this.to;
     }
+    /**
+     * @return flightNum
+     */
     public String getFlightNum() {
         return this.flightNum;
     }
+    /**
+     * @return duration
+     */
     public int getDuration() {
         return this.duration;
     }
+    /**
+     * @return transfers
+     */
     public int getTransfers() {
         return this.transfers;
     }
