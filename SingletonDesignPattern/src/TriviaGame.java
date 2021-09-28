@@ -3,20 +3,22 @@ import java.util.Scanner;
 
 public class TriviaGame {
     // underline uml
-    private TriviaGame triviaGame;
+    private static TriviaGame triviaGame;
     private int score;
     private Scanner reader;
-    private ArrayList<Questions> questions;
-    public TriviaGame() {
-
-    }
-    public TrivaiGame getInstance() {
-
+    private ArrayList<Question> questions;
+    private TriviaGame() {}
+    public TriviaGame getInstance() {
+        if (triviaGame == null) {
+            triviaGame = new TriviaGame();
+        }
+        return this.triviaGame;
     }
     public void play() {
 
     }
     private boolean playRound() {
-        
+        boolean answer = false;
+        return answer;
     }
 }
