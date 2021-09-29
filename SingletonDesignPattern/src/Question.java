@@ -18,8 +18,11 @@ public class Question {
         returny += " 4. " + answers[3] + "\n\n";
         return returny;
     }
-    public boolean isCorrect() {
+    public boolean isCorrect(int UserAnswer) {
         boolean correct = false;
+        if (UserAnswer == CorrectAnswer){
+            correct = true;
+        }
         return correct;
     }
     public String getCorrectAnswer() {
