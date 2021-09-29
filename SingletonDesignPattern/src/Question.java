@@ -20,7 +20,7 @@ public class Question {
     }
     public boolean isCorrect(int UserAnswer) {
         boolean correct = false;
-        if (UserAnswer == CorrectAnswer){
+        if (UserAnswer-1 == CorrectAnswer){
             correct = true;
         }
         return correct;

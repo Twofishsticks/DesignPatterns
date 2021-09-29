@@ -9,7 +9,6 @@ public class TriviaGame {
     private ArrayList<Question> questions;
     private TriviaGame() {
         this.questions = DataLoader.getTriviaQuestions();
-        System.out.println(questions.get(1).toString());
     }
     public static TriviaGame getInstance() {
         if (triviaGame == null) {
@@ -18,9 +17,24 @@ public class TriviaGame {
         return triviaGame;
     }
     public void play() {
-        // this is a loop, goes through the txt, plays the game
+        // while player keeps playing, play round, update score, etc.
+        String playing = "q"; // change to p once ready
+        while (playing.toLowerCase().equals("p")){
+
+            if (playRound()) score++;
+
+            // if input != p or q 
+            while (!(playing.toLowerCase().equals("y") || playing.toLowerCase().equals("q"))) {
+                // error message + ask for input again
+            }
+        }
     }
     private boolean playRound() {
+        //picks random ?n, displays
+        // prompts user answer
+        // correct = good, return true
+        // false = bad, return false
+        // else = error message, false
         boolean answer = false;
 
         return answer;
