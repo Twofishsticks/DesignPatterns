@@ -16,9 +16,10 @@ public class Hard implements State{
         }
     }
     public void levelUp() {
-
+        System.out.println("You are doing so well!!!");
     }
     public void levelDown() {
-
+        game.setState(game.getMediumState());
+        System.out.println("You are struggling, let's go to medium mode.");
     }
 }

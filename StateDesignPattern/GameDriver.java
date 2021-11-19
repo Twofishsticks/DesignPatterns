@@ -10,7 +10,7 @@ public class GameDriver {
     }
 
     public void run() {
-        System.out.println("Welcome to our Arithemetic Game");
+        System.out.println("Welcome to our Arithemetic Game 1 to go 2 to stop");
 
         while(true) {
             int option = getUserOption();

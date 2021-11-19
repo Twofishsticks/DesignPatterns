@@ -14,9 +14,11 @@ public class Medium implements State {
         } 
     }
     public void levelUp() {
-
+        game.setState(game.getHardState());
+        System.out.println("You've been advanced to hard mode.");
     }
     public void levelDown() {
-
-    }
+        game.setState(game.getEasyState());
+        System.out.println("You are struggling, let's go to medium mode.");
+    }  
 }

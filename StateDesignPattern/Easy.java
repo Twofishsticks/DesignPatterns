@@ -12,9 +12,10 @@ public class Easy implements State{
         }
     }
     public void levelUp() {
-        
+        game.setState(game.getMediumState());
+        System.out.println("You've been advanced to medium mode.");
     }
     public void levelDown() {
-
+        System.out.println("You seem to be struggling, you may want to study.");
     }
 }
