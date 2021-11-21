@@ -1,5 +1,8 @@
 public class Easy implements State{
     private ArithemeticGame game;
+    public Easy (ArithemeticGame game) {
+        this.game = game;
+    }
     public int getNum() {
         return (int)(Math.random()*(10-1)+1);
     }

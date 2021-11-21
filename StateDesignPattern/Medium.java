@@ -1,5 +1,8 @@
 public class Medium implements State {
     private ArithemeticGame game;
+    public Medium (ArithemeticGame game) {
+        this.game = game;
+    }
     public int getNum() {
         return (int)(Math.random()*(50-1)+1);
     }
@@ -19,6 +22,6 @@ public class Medium implements State {
     }
     public void levelDown() {
         game.setState(game.getEasyState());
-        System.out.println("You are struggling, let's go to medium mode.");
+        System.out.println("You are struggling, let's go to easy mode.");
     }  
 }

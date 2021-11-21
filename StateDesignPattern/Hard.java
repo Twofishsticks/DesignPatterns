@@ -1,5 +1,8 @@
 public class Hard implements State{
     private ArithemeticGame game;
+    public Hard (ArithemeticGame game) {
+        this.game = game;
+    }
     public int getNum() {
         return (int)(Math.random()*(100-1)+1);
     }
