@@ -34,6 +34,7 @@ public class HealthDriver {
         medRecord.addVisit(makeDate(2017, 3, 25), true, "Growing Strong");
 
         System.out.println(medRecord);
+/*  temp comment out
 
         HealthRecord record = new CarolinaHealthRecord("Bob", "White", makeDate(2008, 8, 10), "Male");
         MedicalRecord myRecord = new MedicalRecordAdapter(record);
@@ -49,7 +50,7 @@ public class HealthDriver {
 
         System.out.println("Previous display prior to adapting the new system.");
         System.out.print(record);
-
+*/
     }
 
     public static void main(String[] args) {
