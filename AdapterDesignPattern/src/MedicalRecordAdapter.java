@@ -1,7 +1,8 @@
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 public class MedicalRecordAdapter implements MedicalRecord {
     // For each method, use the information from the health record, to return the data in the same format as the Medical Record.  
     // Make sure your format looks the same as the provided output.txt
@@ -27,6 +28,12 @@ public class MedicalRecordAdapter implements MedicalRecord {
         gender = "MALE";
         //fullName = convertee.getName();
         fullName = "Bob White";
+        //birthdate = record.getBirthdate();
+        birthdate = makeDate(2008, 8, 10);
+    }
+    private Date makeDate(int year, int month, int day) {
+        Calendar myCalendar = new GregorianCalendar(year, month - 1, day);
+        return myCalendar.getTime();
     }
     public String getFirstName() {
         int i = 0;
@@ -50,7 +57,10 @@ public class MedicalRecordAdapter implements MedicalRecord {
             lastname += fullName.substring(i, i+1);
             i --;
         }
-        return lastname;
+        StringBuilder input1 = new StringBuilder();
+        input1.append(lastname);
+        input1.reverse(); // easy way to reverse it
+        return input1.toString();
     }
     public Date getBirthday() {
         return birthdate;
@@ -82,11 +92,19 @@ public class MedicalRecordAdapter implements MedicalRecord {
         return antiparsing;
     }
     public String toString() {
-        String tostring = "";
-        for(String visit : history) {
-            tostring += visit;
-            tostring += "\n";
+        String result = "***** " + getFirstName() + " " + getLastName() + " *****\n";
+        result += "Birthday: " + getBirthday() + "\n";
+        result += "Gender: " + getGender() + "\n";
+        result += "Medical Visit History: \n";
+
+        if(history.size() == 0){
+            result += "No visits yet";
+        } else {
+            for(Visit visit : antiparsing){
+                result += visit.toString() + "\n";
+            }
         }
-        return tostring;
+
+        return result;
     }
 }
