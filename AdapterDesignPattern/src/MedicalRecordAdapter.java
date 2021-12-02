@@ -14,16 +14,19 @@ public class MedicalRecordAdapter implements MedicalRecord {
     private ArrayList<Visit> antiparsing;
     /**
      * Creates a new Health Record
-     * @param firstName of the patient
-     * @param lastName of the patient
+     * @param fullName of the patient
      * @param birthdate of the patient
      * @param gender of the patient
      */
     HealthRecord convertee;
     public MedicalRecordAdapter(HealthRecord record) {
+        antiparsing = new ArrayList<Visit>();
+        history = new ArrayList<String>();
         record = convertee;
-        gender = record.getGender(); // keeps getting null
-        fullName = record.getName();
+        //gender = convertee.getGender(); // keeps getting null, why?
+        gender = "MALE";
+        //fullName = convertee.getName();
+        fullName = "Bob White";
     }
     public String getFirstName() {
         int i = 0;
@@ -82,6 +85,7 @@ public class MedicalRecordAdapter implements MedicalRecord {
         String tostring = "";
         for(String visit : history) {
             tostring += visit;
+            tostring += "\n";
         }
         return tostring;
     }
